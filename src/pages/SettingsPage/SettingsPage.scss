@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  .outer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Profiler{
+    position: absolute;
+    margin-top: -35vw;
+    font-size: 12vh;
+  }
+  .content{
+    display: flex;
+    width: 650px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .image-box {
+    height: 232px;
+    width: 200px;
+    border-radius: 12px;
+    padding: 6px;
+    background: #092c3e;
+  }
+  .image-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 12px;
+  }
+  .content .details{
+    width: 58%;
+    margin: 10px 0 20px 20px;
+    color: #092c3e;
+  }
+
+  .content .details .name{
+    font-size: 23px;
+    font-weight: 600;
+  }
+  .content .details .job{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content .details p{
+   font-size: 15px;
+   margin-top: 6px;
+  }
+  .content button{
+    display: block;
+    margin-top: 16px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    background: #092c3e;
+    transition: all 0.3s ease;
+  }
+  .content button:hover{
+    transform: scale(0.97);
+  }
+  .media-icons{
+    position: absolute;
+    bottom: 16px;
+    right: 15px;
+    margin-top: 12px;
+    justify-content: flex-end;
+  }
