@@ -25,7 +25,8 @@
 .secondaryBody{
     background-color: white;
     width: 60vw;
-    height: 100vh;
+    min-height: 40vw;
+    height: auto;
 }
 .SearchInput{
     border: 3px solid #092c3e;

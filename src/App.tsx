@@ -5,6 +5,7 @@ import { store } from "./store/store";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { SettingsPage } from "./pages/SettingsPage/SettingsPage";
 import { Favorite } from "@mui/icons-material";
+import { HomePage } from "./pages/HomePage/HomePage";
 
 
 const routerConfig = createBrowserRouter([
@@ -23,6 +24,10 @@ const routerConfig = createBrowserRouter([
   {
     path: '/favourite',
     element: <Favorite />
+  },
+  {
+    path: '/home',
+    element: <HomePage />
   }
 ])
 

@@ -9,16 +9,16 @@ export const Registration = () => {
             </span>
             <p>Войти с помощью</p>
             <div className="icons-wrapper">
-                <a className="reg__link google-link" href="#">
+                <a className="reg__link google-link" href="https://www.google.co.uz/">
                     <img src="./img/icons/google.svg" alt="Google" />
                 </a>
-                <a className="reg__link google-plus-link" href="#">
+                <a className="reg__link google-plus-link" href="https://www.google.co.uz/">
                     <img src="./img/icons/google-plus.svg" alt="Google Plus" />
                 </a>
-                <a className="reg__link yandex-link" href="#">
+                <a className="reg__link yandex-link" href="https://www.google.co.uz/">
                     <img src="./img/icons/yandex.svg" alt="Yandex" />
                 </a>
-                <a className="reg__link mail-ru-link" href="#">
+                <a className="reg__link mail-ru-link" href="https://mail.ru/">
                     <img src="./img/icons/mail-ru.svg" alt="Mail.ru" />
                 </a>
             </div>

@@ -1,26 +1,55 @@
+import { constants } from 'fs'
 import './Card.scss'
+import { FavouriteButton } from '../FavouriteButton/FavouriteButton';
 
-export const Card = () => {
-    return(
-        <div className="wrapper">
-  <h1>Homes for sale</h1>
-  <div className="cols">
-			<div className="col">
-				<div className="container">
-					<div className="front">
-						<div className="inner">
-							<p>Diligord</p>
-              <span>Lorem ipsum</span>
+interface ICardProps {
+	id: number;
+	bed: number
+	bath: number
+	location: string
+	sqft: number
+	cost: number
+	src: string
+	onAddToFavourites: (id: number) => void;
+  	onRemoveFromFavourites: (id: number) => void;
+}
+
+export const Card = ({ id, bed, bath, location, sqft, cost, src, onAddToFavourites, onRemoveFromFavourites }: ICardProps) => {
+	return (
+		<div className="wrapper">
+			<div className="cols">
+				<div className="col">
+					<div className="container">
+						<div className="front" style={{backgroundImage: `url(${src})`}}>
+							<div className="inner">
+								<span>{location}</span>
+							</div>
 						</div>
-					</div>
-					<div className="back">
-						<div className="inner">
-						  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						<div className="back">
+							<div className="inner">
+								<p>
+									{bed} bed
+								</p>
+								<p>
+									{bath} bath
+								</p>
+								<p>
+									{sqft} sqft
+								</p>
+								<p>
+									{cost}$
+								</p>
+								<FavouriteButton
+         						isFavorite={false}
+          						onClick={() => {
+            					onAddToFavourites(id);
+          						}}
+        						/>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
- </div>
-    )
+	)
 }
